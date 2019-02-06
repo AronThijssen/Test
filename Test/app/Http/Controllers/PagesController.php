@@ -22,12 +22,12 @@ class PagesController extends Controller
         ]);
     }
 
-    public function contact() {
+    public function contact() { /* Functie die de koppeling maakt naar de controller  */
 
         return view('contact');
     }
 
-    public function about() {
+    public function about() { /* Functie die de koppeling maakt naar de controller  */
 
         return view('about');
 
