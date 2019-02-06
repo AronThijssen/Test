@@ -4,13 +4,11 @@
 
 <head>
 
-    <title></title>
+    <title>@yield('title', 'Laracasts')</title>
 
 </head>
 
 <body>
-
-    @yield('content')
 
 
 <ul>
@@ -22,6 +20,8 @@
     <li><a href="/contact">Contact</a></li>
 
 </ul>
+
+@yield('content')
 
 </body>
 

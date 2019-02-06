@@ -1,17 +1,20 @@
 @extends('layout')
 
+@section('title','Home Pagina')
+
 @section('content')
-        <div class="flex-center position-ref full-height">
 
-            <div class="content">
+        <h1>My {{ $foo }} website</h1>
 
-                <div class="title m-b-md">
 
-                    Home
+        <ul>
 
-                </div>
+            @foreach($tasks as $task)
 
-            </div>
+                <li>{{ $task }}</li>
 
-        </div>
+            @endforeach
+
+        </ul>
+
 @endsection

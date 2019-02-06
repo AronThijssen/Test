@@ -1,5 +1,6 @@
 @extends('layout')
 
+@section('title','About Pagina')
 
 @section('content')
 <h1>About us</h1>
