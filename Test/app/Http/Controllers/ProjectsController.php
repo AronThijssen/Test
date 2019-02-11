@@ -29,8 +29,12 @@ class ProjectsController extends Controller
 
     }
 
-    public function edit()
+    public function edit() //localhost.12345/projects/{project}/edit
     {
+
+
+
+        return view('projects.edit');
 
     }
 
