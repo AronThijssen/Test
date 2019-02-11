@@ -33,7 +33,7 @@ class ProjectsController extends Controller
     {
 
 
-
+        $project = Project::find();
         return view('projects.edit');
 
     }
