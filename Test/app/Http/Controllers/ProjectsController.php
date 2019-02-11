@@ -16,4 +16,48 @@ class ProjectsController extends Controller
 
         return view('projects.index', ['projects' => $projects]); // dit returned de code van het bestand
     }
+
+    public function create()
+    {
+
+        return view('projects.create'); //returned de aangemaakte view
+
+    }
+
+    public function show()
+    {
+
+    }
+
+    public function edit()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function destroy()
+    {
+
+    }
+
+    public function store()
+    {
+
+        $project = new Project();
+
+        $project->title = request('title');
+
+        $project->description = request('description');
+
+
+        $project->save(); //slaat de requests op in een nieuw project via de project variabele
+
+        return redirect('/projects'); //stuurt je terug naar de projects pagina wanneer je submit
+        //return request()->all(); dit geeft alle requests terug op de site
+
+    }
 }
