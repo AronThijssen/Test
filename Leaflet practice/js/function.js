@@ -426,5 +426,5 @@ $(document).ready(function () {
     }).addTo(mymap)
 
     let marker = L.marker([51.680971, 5.294413]).addTo(mymap).bindPopup("hallo daar");
-
+//test
 });
